@@ -1,0 +1,10 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"script",
+	"author":	"kantoku",
+	"description":	{
+		"":	"Export SketchPoints Coordinate to CSVfile"
+	},
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
