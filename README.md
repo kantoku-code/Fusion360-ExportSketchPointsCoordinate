@@ -18,8 +18,8 @@ The unit of the exported CSV file is the unit at the time of script execution.
 
 # Action
 Confirmed in the following environment.
- + Fusion360 Ver2.0.6516
- + Windows10 64bit Home
+ + Fusion360 Ver2.0.6613
+ + Windows10 64bit Pro
 
 # License
 MIT
