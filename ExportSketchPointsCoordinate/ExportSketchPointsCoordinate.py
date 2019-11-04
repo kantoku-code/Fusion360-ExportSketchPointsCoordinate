@@ -1,4 +1,4 @@
-#FusionAPI_python ExportSketchPointsCoordinate Ver0.0.1
+#FusionAPI_python ExportSketchPointsCoordinate Ver0.0.2
 #Author-kantoku
 #Description-Export SketchPoints Coordinate to CSVfile
 
@@ -65,6 +65,7 @@ def GetRootPosition(self):
         pnt3d = self.worldGeometry.copy()
         occs = GetParentOccurrenceList(comp)
         mat3ds = [occ.transform for occ in occs]
+        mat3ds.reverse()
         for mat3d in mat3ds:
             pnt3d.transformBy(mat3d)
 
