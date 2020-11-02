@@ -1,4 +1,4 @@
-#FusionAPI_python ExportSketchPointsCoordinate Ver0.0.2
+#FusionAPI_python ExportSketchPointsCoordinate Ver0.0.3
 #Author-kantoku
 #Description-Export SketchPoints Coordinate to CSVfile
 
@@ -19,8 +19,7 @@ def run(context):
         #all sketchPoint
         sktPnts = []
         for skt in skts:
-            for sktPnt in skt.sketchPoints[1:]:
-                sktPnts.append(sktPnt)
+            sktPnts.extend(sktPnt for sktPnt in skt.sketchPoints if sktPnt != skt.originPoint)
 
         if len(sktPnts) < 1:
             ui.messageBox('There are no points to export')
